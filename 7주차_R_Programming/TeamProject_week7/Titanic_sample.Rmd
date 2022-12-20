@@ -1,0 +1,51 @@
+---
+title: "Untitled"
+author: "CHAEBEOM"
+date: "2022-08-08"
+output: html_document
+---
+
+```{r}
+getwd()
+```
+
+## 데이터 프레임 읽어오기
+
+```{r}
+df <- read.csv('./titanic/train.csv', header = T)
+str(df)
+
+```
+
+## 승객 등급별 사망여부
+
+<!-- 둘다 범주율일 때, 상호간 비율을 보여줌 -->
+<!-- - Pclass -> 예측의 독립변수로서 가치가 있다!! -->
+
+```{r}
+mosaicplot(Pclass ~ Survived, data = df,
+           col = 2:4)
+```
+## 출발 항구별 승객수는 얼마일까요?
+
+```{r}
+table(df$Embarked)
+barplot(table(df$Embarked), col=2:4)
+
+# 제일 앞에 것은 NA값
+
+```
+
+## 결측치 분포는 어떠할까?
+```{r}
+library(VIM)
+aggr(df, numbers=T, prop = F)
+# Embarked의 결측치는 너무 작아서 안나오는 것인가!?
+dim(df)
+# 891개 data중에서 Age는 177개의 결측치가 있네
+# i) 사실상 큰 독립변수로서의 역할을 안할 것 같으면 해당 컬럼 날리고
+# ii) 중요하다 싶으면, 평균이든 뭐든 대체해서 값을 넣도록 하고 
+# iii) 코딩 실력이 많이 올라간다면, 다른 컬럼들을 참고하여 나이를 채울 수도 있을 것이고
+
+```
+

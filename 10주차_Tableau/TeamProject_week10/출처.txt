@@ -1,0 +1,6 @@
+< 데이터 출처 >
+
+일반 및 휴게음식점 인허가 점포
+https://www.localdata.go.kr/data/dataView.do?ctgryGbn=07&groupGbn=24&opnSvcId=07_24_05_P
+
+통계청 : 국내 총인구

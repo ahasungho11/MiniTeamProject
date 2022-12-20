@@ -1,0 +1,1452 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='sig_CONVERT' inline='true' name='federated.1b1uwch0ezpq6611g3nk201c3c00' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sig_CONVERT' name='ogrdirect.02a9xy7003664r1c4s2r81yf8y4n'>
+            <connection class='ogrdirect' directory='C:/Users/ahasu/Desktop/태블로 PJ' filename='sig_CONVERT.shp' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='ogrdirect.02a9xy7003664r1c4s2r81yf8y4n' name='sig_CONVERT.shp' table='[sig_CONVERT.shp]' type='table'>
+          <columns>
+            <column datatype='string' name='SIG_CD' ordinal='0' />
+            <column datatype='string' name='SIG_ENG_NM' ordinal='1' />
+            <column datatype='string' name='SIG_KOR_NM' ordinal='2' />
+            <column datatype='spatial' name='Geometry' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='ogrdirect.02a9xy7003664r1c4s2r81yf8y4n' name='sig_CONVERT.shp' table='[sig_CONVERT.shp]' type='table'>
+          <columns>
+            <column datatype='string' name='SIG_CD' ordinal='0' />
+            <column datatype='string' name='SIG_ENG_NM' ordinal='1' />
+            <column datatype='string' name='SIG_KOR_NM' ordinal='2' />
+            <column datatype='spatial' name='Geometry' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>SIG_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SIG_CD]</local-name>
+            <parent-name>[sig_CONVERT.shp]</parent-name>
+            <remote-alias>SIG_CD</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sig_CONVERT.shp_6CC5F6E64F1E433789A8A6A97D2D38E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIG_ENG_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SIG_ENG_NM]</local-name>
+            <parent-name>[sig_CONVERT.shp]</parent-name>
+            <remote-alias>SIG_ENG_NM</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sig_CONVERT.shp_6CC5F6E64F1E433789A8A6A97D2D38E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SIG_KOR_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SIG_KOR_NM]</local-name>
+            <parent-name>[sig_CONVERT.shp]</parent-name>
+            <remote-alias>SIG_KOR_NM</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sig_CONVERT.shp_6CC5F6E64F1E433789A8A6A97D2D38E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[sig_CONVERT.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>3</ordinal>
+            <caption>기하 도형</caption>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sig_CONVERT.shp_6CC5F6E64F1E433789A8A6A97D2D38E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='기하 도형' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column caption='Sig Cd' datatype='string' name='[SIG_CD]' role='dimension' type='nominal' />
+      <column caption='Sig Eng Nm' datatype='string' name='[SIG_ENG_NM]' role='dimension' type='nominal' />
+      <column caption='Sig Kor Nm' datatype='string' name='[SIG_KOR_NM]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='sig_CONVERT.shp' datatype='table' name='[__tableau_internal_object_id__].[sig_CONVERT.shp_6CC5F6E64F1E433789A8A6A97D2D38E8]' role='measure' type='quantitative' />
+      <column-instance column='[SIG_KOR_NM]' derivation='None' name='[none:SIG_KOR_NM:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:SIG_KOR_NM:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;거제시&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;광주시&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;남동구&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;목포시&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;삼척시&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;수원시 영통구&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;여수시&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;완도군&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;임실군&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;창원시 마산회원구&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;파주시&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;가평군&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;고흥군&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;금천구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;도봉구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;부여군&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;성북구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;안양시동안구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;영월군&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;음성군&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;중랑구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;청주시 청원구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;해남군&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;강북구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;관악구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;김포시&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;동래구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;사상구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;송파구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;양양군&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;예천군&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;의정부시&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;진주시&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;칠곡군&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;화성시&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;계룡시&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;구로구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;노원구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;미추홀구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;서대문구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;순천시&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;연천군&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;용인시수지구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;전주시덕진구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;천안시동남구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;포항시 남구&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;거창군&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;광진구&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;남양주시&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;무안군&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;상주시&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;수원시 장안구&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;여주시&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;완주군&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;장성군&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;창원시 성산구&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;평창군&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;강서구&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;광명시&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;김해시&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;동작구&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;사천시&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;수성구&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;양주시&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;오산시&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;이천시&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;진천군&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;태백시&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;화순군&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;고양시일산서구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;금산군&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;당진시&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;부산진구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;성남시 중원구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;안산시상록구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;영암군&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;유성구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;종로구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;청주시 상당구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;함평군&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;강남구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;곡성군&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;기장군&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;동구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;부천시&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;성주군&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;안양시만안구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;영주시&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;의령군&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;증평군&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;청주시 흥덕구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;해운대구&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;고양시덕양구&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;군위군&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;달성군&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;보은군&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;성남시 분당구&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;안동시&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;영동군&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;울진군&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;제주시&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;청송군&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;함안군&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;강진군&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;광산구&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;나주시&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;동해시&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;사하구&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;수영구&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;양천구&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;옥천군&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;익산시&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;창녕군&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;태안군&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;화천군&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;계양구&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;구리시&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;논산시&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;밀양시&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;서산시&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;시흥시&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;영광군&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;용인시처인구&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;전주시완산구&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;천안시서북구&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;포항시 북구&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;고령군&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;구미시&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;단양군&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;보령시&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;서천군&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;신안군&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;영덕군&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;울릉군&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;정선군&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;철원군&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;하남시&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;고양시일산동구&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;군포시&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;담양군&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;봉화군&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;성남시 수정구&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;안산시단원구&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;영등포구&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;원주시&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;제천시&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;청양군&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;함양군&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;고창군&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;금정구&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;대덕구&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;부안군&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;성동구&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;안성시&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;영양군&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;은평구&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;중구&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;청주시 서원구&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;합천군&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;경산시&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;괴산군&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;남원시&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;무주군&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;서구&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;수원시 팔달구&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;연수구&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;용산구&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;장수군&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;창원시 의창구&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;평택시&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;강화군&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;광양시&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;남구&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;마포구&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;산청군&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;수원시 권선구&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;양평군&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;옹진군&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;인제군&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;창원시 마산합포구&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;통영시&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;횡성군&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;강동구&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;공주시&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;김제시&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;동대문구&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;부평구&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;세종특별자치시&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;양구군&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;영천시&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;의성군&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;진도군&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;춘천시&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;홍성군&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;고성군&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;군산시&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;달서구&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;보성군&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;서초구&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;아산시&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;영도구&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;울주군&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;정읍시&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;청도군&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;하동군&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;경주시&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;구례군&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;남해군&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;문경시&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;서귀포시&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;순창군&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;연제구&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;용인시기흥구&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;장흥군&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;창원시 진해구&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;포천시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;강릉시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;과천시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;김천시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;동두천시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;북구&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;속초시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;양산시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;예산군&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;의왕시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;진안군&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;충주시&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;홍천군&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sig_CONVERT.shp' id='sig_CONVERT.shp_6CC5F6E64F1E433789A8A6A97D2D38E8'>
+            <properties context=''>
+              <relation connection='ogrdirect.02a9xy7003664r1c4s2r81yf8y4n' name='sig_CONVERT.shp' table='[sig_CONVERT.shp]' type='table'>
+                <columns>
+                  <column datatype='string' name='SIG_CD' ordinal='0' />
+                  <column datatype='string' name='SIG_ENG_NM' ordinal='1' />
+                  <column datatype='string' name='SIG_KOR_NM' ordinal='2' />
+                  <column datatype='spatial' name='Geometry' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='210828-220827_휴게_커피숍_개업(02. 카페 개업_폐업)' inline='true' name='federated.101xkjl1sfyvid1e9kan61367ski' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='02. 카페 개업_폐업' name='excel-direct.1g9qy271wd6f4o1fpoj5p09skimk'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/ahasu/Desktop/data/02. 카페 개업_폐업.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1g9qy271wd6f4o1fpoj5p09skimk' name='210828-220827_휴게_커피숍_개업' table='[&apos;210828-220827_휴게_커피숍_개업$&apos;]' type='table'>
+          <columns gridOrigin='A1:B9:no:A1:B9:1' lost='0' outcome='1' processed='8'>
+            <column datatype='string' name='지역구' ordinal='0' />
+            <column datatype='integer' name='영업중' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1g9qy271wd6f4o1fpoj5p09skimk' name='210828-220827_휴게_커피숍_개업' table='[&apos;210828-220827_휴게_커피숍_개업$&apos;]' type='table'>
+          <columns gridOrigin='A1:B9:no:A1:B9:1' lost='0' outcome='1' processed='8'>
+            <column datatype='string' name='지역구' ordinal='0' />
+            <column datatype='integer' name='영업중' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[210828-220827_휴게_커피숍_개업]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B9:no:A1:B9:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>8</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지역구</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[지역구]</local-name>
+            <parent-name>[210828-220827_휴게_커피숍_개업]</parent-name>
+            <remote-alias>지역구</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[210828-220827!휴게!커피숍!개업_A1D8D91FE6A54EC7B36E9055F607CE83]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업중</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[영업중]</local-name>
+            <parent-name>[210828-220827_휴게_커피숍_개업]</parent-name>
+            <remote-alias>영업중</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[210828-220827!휴게!커피숍!개업_A1D8D91FE6A54EC7B36E9055F607CE83]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='210828-220827_휴게_커피숍_개업' datatype='table' name='[__tableau_internal_object_id__].[210828-220827!휴게!커피숍!개업_A1D8D91FE6A54EC7B36E9055F607CE83]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[영업중]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='210828-220827_휴게_커피숍_개업' id='210828-220827!휴게!커피숍!개업_A1D8D91FE6A54EC7B36E9055F607CE83'>
+            <properties context=''>
+              <relation connection='excel-direct.1g9qy271wd6f4o1fpoj5p09skimk' name='210828-220827_휴게_커피숍_개업' table='[&apos;210828-220827_휴게_커피숍_개업$&apos;]' type='table'>
+                <columns gridOrigin='A1:B9:no:A1:B9:1' lost='0' outcome='1' processed='8'>
+                  <column datatype='string' name='지역구' ordinal='0' />
+                  <column datatype='integer' name='영업중' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sig_CONVERT' name='federated.1b1uwch0ezpq6611g3nk201c3c00' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1b1uwch0ezpq6611g3nk201c3c00'>
+            <column caption='기하 도형' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='Sig Cd' datatype='string' name='[SIG_CD]' role='dimension' type='nominal' />
+            <column caption='Sig Kor Nm' datatype='string' name='[SIG_KOR_NM]' role='dimension' type='nominal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SIG_CD]' derivation='None' name='[none:SIG_CD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SIG_KOR_NM]' derivation='None' name='[none:SIG_KOR_NM:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_KOR_NM:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:SIG_KOR_NM:nk]' member='&quot;남구&quot;' />
+              <groupfilter function='member' level='[none:SIG_KOR_NM:nk]' member='&quot;달서구&quot;' />
+              <groupfilter function='member' level='[none:SIG_KOR_NM:nk]' member='&quot;달성군&quot;' />
+              <groupfilter function='member' level='[none:SIG_KOR_NM:nk]' member='&quot;동구&quot;' />
+              <groupfilter function='member' level='[none:SIG_KOR_NM:nk]' member='&quot;북구&quot;' />
+              <groupfilter function='member' level='[none:SIG_KOR_NM:nk]' member='&quot;서구&quot;' />
+              <groupfilter function='member' level='[none:SIG_KOR_NM:nk]' member='&quot;수성구&quot;' />
+              <groupfilter function='member' level='[none:SIG_KOR_NM:nk]' member='&quot;중구&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_KOR_NM:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b1uwch0ezpq6611g3nk201c3c00].[Longitude (generated)]' field-type='quantitative' max='14362229.632334368' min='14253986.192944115' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1b1uwch0ezpq6611g3nk201c3c00].[Latitude (generated)]' field-type='quantitative' max='4307616.7082283506' min='4243211.8586942833' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_CD:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_KOR_NM:nk]' />
+              <text column='[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_KOR_NM:nk]' />
+              <text column='[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_CD:nk]' />
+              <lod column='[federated.1b1uwch0ezpq6611g3nk201c3c00].[clct:Geometry:nk]' />
+              <geometry column='[federated.1b1uwch0ezpq6611g3nk201c3c00].[clct:Geometry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='마루 부리OTF 굵은' />
+                <format attr='font-weight' value='normal' />
+                <format attr='color' value='#1b1b1b' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b1uwch0ezpq6611g3nk201c3c00].[Latitude (generated)]</rows>
+        <cols>[federated.1b1uwch0ezpq6611g3nk201c3c00].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{75AB8F72-05ED-45DA-8A4D-ECF31A2A0C24}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_KOR_NM:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.101xkjl1sfyvid1e9kan61367ski].[none:영업중:ok]</field>
+            <field>[federated.1b1uwch0ezpq6611g3nk201c3c00].[:Measure Names]</field>
+            <field>[federated.1b1uwch0ezpq6611g3nk201c3c00].[clct:Geometry:nk]</field>
+            <field>[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_CD:nk]</field>
+            <field>[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_ENG_NM:nk]</field>
+            <field>[federated.1b1uwch0ezpq6611g3nk201c3c00].[none:SIG_KOR_NM:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5A2A364D-DBAF-4717-8F28-C77342DF175E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

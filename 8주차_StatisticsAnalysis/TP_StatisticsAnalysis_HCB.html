@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Science Job Salaries_허채범</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="PT_week8_HCB_files/libs/clipboard/clipboard.min.js"></script>
+<script src="PT_week8_HCB_files/libs/quarto-html/quarto.js"></script>
+<script src="PT_week8_HCB_files/libs/quarto-html/popper.min.js"></script>
+<script src="PT_week8_HCB_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="PT_week8_HCB_files/libs/quarto-html/anchor.min.js"></script>
+<link href="PT_week8_HCB_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="PT_week8_HCB_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="PT_week8_HCB_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="PT_week8_HCB_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="PT_week8_HCB_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Science Job Salaries_허채범</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<ul>
+<li>출처 : kaggle(캐글)<br>
+</li>
+<li>데이터 사이언스 직업분야 급여<br>
+(급여, 직원 고용 형태, 국가, 연도, 회사 규모, 원격 업무의 비중)</li>
+</ul>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">———————————————————————————–</h3>
+<section id="목적-회사의-규모와-원격-업무-비중에-따라-급여에-차이가-있는지-알아보자" class="level4">
+<h4 class="anchored" data-anchor-id="목적-회사의-규모와-원격-업무-비중에-따라-급여에-차이가-있는지-알아보자"><span style="color: red">목적 : <span style="background-color: #fff5b1">회사의 규모</span>와 <span style="background-color: #fff5b1">원격 업무 비중</span>에 따라 <span style="background-color: #fff5b1">급여</span>에 차이가 있는지 알아보자</span></h4>
+</section>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">———————————————————————————–</h3>
+<section id="전체적-흐름" class="level5">
+<h5 class="anchored" data-anchor-id="전체적-흐름">[ 전체적 흐름 ]</h5>
+</section>
+<section id="eda" class="level5">
+<h5 class="anchored" data-anchor-id="eda">1. EDA</h5>
+</section>
+<section id="종속변수와-독립변수의-결정" class="level5">
+<h5 class="anchored" data-anchor-id="종속변수와-독립변수의-결정">2. 종속변수와 독립변수의 결정</h5>
+</section>
+<section id="정규성과-등분산성-검정---히스토그램-q-q-플롯-샤피로-윌크-검정-anderson-darling-검정-bartlett-검정-levene-검정" class="level5">
+<h5 class="anchored" data-anchor-id="정규성과-등분산성-검정---히스토그램-q-q-플롯-샤피로-윌크-검정-anderson-darling-검정-bartlett-검정-levene-검정">3. 정규성과 등분산성 검정 - <span style="color: #008000">히스토그램, Q-Q 플롯, 샤피로-윌크 검정, Anderson-Darling 검정 / bartlett 검정, levene 검정</span></h5>
+</section>
+<section id="이원-분산분석-집단의-영향-유무---aov함수-상자도표boxplot-조건부도표coplot" class="level5">
+<h5 class="anchored" data-anchor-id="이원-분산분석-집단의-영향-유무---aov함수-상자도표boxplot-조건부도표coplot">4. <span style="background-color: #fff5b1">이원 분산분석 (집단의 영향 유무)</span> - <span style="color: #008000">aov함수, 상자도표(boxplot), 조건부도표(coplot)</span></h5>
+</section>
+<section id="사후검정-집단-간-영향관계---tukeyhsd" class="level5">
+<h5 class="anchored" data-anchor-id="사후검정-집단-간-영향관계---tukeyhsd">5. 사후검정 (집단 간 영향관계) - <span style="color: #008000">TukeyHSD</span></h5>
+</section>
+<section id="느낀점" class="level5">
+<h5 class="anchored" data-anchor-id="느낀점">6. 느낀점</h5>
+</section>
+</section>
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2">———————————————————————————–</h3>
+</section>
+<section id="eda-1" class="level2">
+<h2 class="anchored" data-anchor-id="eda-1"><span style="color: #0000FF">1. EDA</span></h2>
+<section id="파일-읽기" class="level3">
+<h3 class="anchored" data-anchor-id="파일-읽기"><strong>파일 읽기</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'readxl'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sal <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'ds_salaries.csv'</span>, <span class="at">header =</span> <span class="dv">1</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sal,<span class="at">n=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  X work_year experience_level employment_type                  job_title
+1 0      2020               MI              FT             Data Scientist
+2 1      2020               SE              FT Machine Learning Scientist
+3 2      2020               SE              FT          Big Data Engineer
+  salary salary_currency salary_in_usd employee_residence remote_ratio
+1  70000             EUR         79833                 DE            0
+2 260000             USD        260000                 JP            0
+3  85000             GBP        109024                 GB           50
+  company_location company_size
+1               DE            L
+2               JP            S
+3               GB            M</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(sal, <span class="at">n=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      X work_year experience_level employment_type    job_title salary
+605 604      2022               SE              FT Data Analyst 129000
+606 605      2022               SE              FT Data Analyst 150000
+607 606      2022               MI              FT AI Scientist 200000
+    salary_currency salary_in_usd employee_residence remote_ratio
+605             USD        129000                 US            0
+606             USD        150000                 US          100
+607             USD        200000                 IN          100
+    company_location company_size
+605               US            M
+606               US            M
+607               US            L</code></pre>
+</div>
+</div>
+</section>
+<section id="section-3" class="level3">
+<h3 class="anchored" data-anchor-id="section-3">———————————————————————————–</h3>
+</section>
+<section id="변수-살피기" class="level3">
+<h3 class="anchored" data-anchor-id="변수-살피기"><strong>변수 살피기</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   607 obs. of  12 variables:
+ $ X                 : int  0 1 2 3 4 5 6 7 8 9 ...
+ $ work_year         : int  2020 2020 2020 2020 2020 2020 2020 2020 2020 2020 ...
+ $ experience_level  : chr  "MI" "SE" "SE" "MI" ...
+ $ employment_type   : chr  "FT" "FT" "FT" "FT" ...
+ $ job_title         : chr  "Data Scientist" "Machine Learning Scientist" "Big Data Engineer" "Product Data Analyst" ...
+ $ salary            : int  70000 260000 85000 20000 150000 72000 190000 11000000 135000 125000 ...
+ $ salary_currency   : chr  "EUR" "USD" "GBP" "USD" ...
+ $ salary_in_usd     : int  79833 260000 109024 20000 150000 72000 190000 35735 135000 125000 ...
+ $ employee_residence: chr  "DE" "JP" "GB" "HN" ...
+ $ remote_ratio      : int  0 0 50 0 50 100 100 50 100 50 ...
+ $ company_location  : chr  "DE" "JP" "GB" "HN" ...
+ $ company_size      : chr  "L" "S" "M" "S" ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 607  12</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "X"                  "work_year"          "experience_level"  
+ [4] "employment_type"    "job_title"          "salary"            
+ [7] "salary_currency"    "salary_in_usd"      "employee_residence"
+[10] "remote_ratio"       "company_location"   "company_size"      </code></pre>
+</div>
+</div>
+</section>
+<section id="쓰지-않을-변수들" class="level3">
+<h3 class="anchored" data-anchor-id="쓰지-않을-변수들"><strong>쓰지 않을 변수들</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>sal<span class="sc">$</span>X <span class="co"># 일련번호</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>sal<span class="sc">$</span>work_year <span class="co"># 연도(2020-22, 활용할 것 같지 않음)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="범주형-데이터-살피기" class="level3">
+<h3 class="anchored" data-anchor-id="범주형-데이터-살피기"><strong>범주형 데이터 살피기</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(sal<span class="sc">$</span>experience_level)   <span class="co"># 숙련도에 따라 지출 소득이 다른 것은 자명</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(sal<span class="sc">$</span>employee_residence) <span class="co"># 50개가 넘음</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(sal<span class="sc">$</span>company_location)   <span class="co"># 50개국</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(sal<span class="sc">$</span>employment_type)    <span class="co"># 업무 형태</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(sal<span class="sc">$</span>job_title)          <span class="co"># 직업도 50가지</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="수치형-데이터-살피기" class="level3">
+<h3 class="anchored" data-anchor-id="수치형-데이터-살피기"><strong>수치형 데이터 살피기</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>sal<span class="sc">$</span>salary</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>sal<span class="sc">$</span>salary_in_usd</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 지출 급여를 나타내는 것은 둘다 같음</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="범주형수치-살피기-팩터-형으로-바꾸기" class="level3">
+<h3 class="anchored" data-anchor-id="범주형수치-살피기-팩터-형으로-바꾸기"><strong>범주형(수치) 살피기 =&gt; 팩터 형으로 바꾸기</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sal<span class="sc">$</span>company_size <span class="ot">&lt;-</span> <span class="fu">factor</span>(sal<span class="sc">$</span>company_size,</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>                           <span class="at">levels=</span><span class="fu">c</span>(<span class="st">'L'</span>, <span class="st">'M'</span>, <span class="st">'S'</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">'Large'</span>, <span class="st">'Medium'</span>, <span class="st">'Small'</span>))</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>sal<span class="sc">$</span>remote_ratio <span class="ot">&lt;-</span> <span class="fu">factor</span>(sal<span class="sc">$</span>remote_ratio,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">levels=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">50</span>, <span class="dv">100</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">'20%미만'</span>, <span class="st">'20-80%'</span>,<span class="st">'80%이상'</span>))</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>sal<span class="sc">$</span>job_title <span class="ot">&lt;-</span> <span class="fu">factor</span>(sal<span class="sc">$</span>job_title)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(sal<span class="sc">$</span>company_size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Large"  "Medium" "Small" </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(sal<span class="sc">$</span>remote_ratio)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "20%미만" "20-80%"  "80%이상"</code></pre>
+</div>
+</div>
+<section id="연속형-변수를-가정하는-공변량이-아닌" class="level5">
+<h5 class="anchored" data-anchor-id="연속형-변수를-가정하는-공변량이-아닌"><span style="background-color: #fff5b1">연속형 변수를 가정하는 공변량이 아닌,</span></h5>
+</section>
+<section id="집단을-나타내는-범주형-변수로-처리하기-위해서-팩터로-변환" class="level5">
+<h5 class="anchored" data-anchor-id="집단을-나타내는-범주형-변수로-처리하기-위해서-팩터로-변환"><span style="background-color: #fff5b1">집단을 나타내는 ’범주형 변수’로 처리하기 위해서 팩터로 변환</span></h5>
+</section>
+</section>
+<section id="section-4" class="level3">
+<h3 class="anchored" data-anchor-id="section-4">———————————————————————————–</h3>
+</section>
+<section id="결측치-확인" class="level3">
+<h3 class="anchored" data-anchor-id="결측치-확인"><strong>결측치 확인</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(sal<span class="sc">$</span>company_size, sal<span class="sc">$</span>remote_ratio)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        
+         20%미만 20-80% 80%이상
+  Large       32     60     106
+  Medium      79     21     226
+  Small       16     18      49</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">addmargins</span>(<span class="fu">table</span>(sal<span class="sc">$</span>company_size, sal<span class="sc">$</span>remote_ratio))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        
+         20%미만 20-80% 80%이상 Sum
+  Large       32     60     106 198
+  Medium      79     21     226 326
+  Small       16     18      49  83
+  Sum        127     99     381 607</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 수치형 범주 2가지 모두 전체 607개로 결측치가 없음을 확인할 수 있음</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(VIM)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: colorspace</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: grid</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>VIM is ready to use.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Suggestions and bug-reports can be submitted at: https://github.com/statistikat/VIM/issues</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'VIM'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:datasets':
+
+    sleep</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aggr</span>(sal, <span class="at">prop=</span>F, <span class="at">numbers=</span>T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 결측치 없음. 재차 확인</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="section-5" class="level3">
+<h3 class="anchored" data-anchor-id="section-5">———————————————————————————–</h3>
+</section>
+<section id="이상치-확인" class="level3">
+<h3 class="anchored" data-anchor-id="이상치-확인"><strong>이상치 확인</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sal<span class="sc">$</span>salary_in_usd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   2859   62726  101570  112298  150000  600000 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(sal<span class="sc">$</span>salary_in_usd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="지출하는-급여의-이상치는-연봉과-같은-것으로" class="level5">
+<h5 class="anchored" data-anchor-id="지출하는-급여의-이상치는-연봉과-같은-것으로"><span style="background-color: #fff5b1">지출하는 급여의 이상치는 ’연봉’과 같은 것으로,</span></h5>
+</section>
+<section id="소득의-상한은-두지-않고-그대로-유지해서-쓰는-것으로-결정" class="level5">
+<h5 class="anchored" data-anchor-id="소득의-상한은-두지-않고-그대로-유지해서-쓰는-것으로-결정"><span style="background-color: #fff5b1">소득의 상한은 두지 않고, 그대로 유지해서 쓰는 것으로 결정</span></h5>
+</section>
+</section>
+<section id="section-6" class="level3">
+<h3 class="anchored" data-anchor-id="section-6">———————————————————————————–</h3>
+</section>
+</section>
+<section id="종속변수와-독립변수의-결정-1" class="level2">
+<h2 class="anchored" data-anchor-id="종속변수와-독립변수의-결정-1"><span style="color: #0000FF">2. 종속변수와 독립변수의 결정</span></h2>
+<section id="처음-국가별-지급되는-급여의-차이---각국의-해당-업계-발전-수준이나-규모를-비교" class="level4">
+<h4 class="anchored" data-anchor-id="처음-국가별-지급되는-급여의-차이---각국의-해당-업계-발전-수준이나-규모를-비교">처음 : 국가별 지급되는 급여의 차이 -&gt; 각국의 해당 업계 발전 수준이나 규모를 비교</h4>
+</section>
+<section id="but-국가가-50개가-넘고-일부를-뽑아서-하기엔-큰-의미가-없을-것-같았음" class="level4">
+<h4 class="anchored" data-anchor-id="but-국가가-50개가-넘고-일부를-뽑아서-하기엔-큰-의미가-없을-것-같았음">BUT, 국가가 50개가 넘고, 일부를 뽑아서 하기엔 큰 의미가 없을 것 같았음</h4>
+</section>
+<section id="최종-회사의-규모가-작지만-원격-업무의-비중이-높으면서-지출하는-급여가-높은-경우가-있지는-않을까-하는-생각" class="level4">
+<h4 class="anchored" data-anchor-id="최종-회사의-규모가-작지만-원격-업무의-비중이-높으면서-지출하는-급여가-높은-경우가-있지는-않을까-하는-생각"><span style="background-color: #fff5b1">최종 : 회사의 규모가 작지만, 원격 업무의 비중이 높으면서 지출하는 급여가 높은 경우가 있지는 않을까? 하는 생각</span></h4>
+</section>
+<section id="종속변수-salary_in_usd-국가별-비교-위해-usd달러로-환산" class="level4">
+<h4 class="anchored" data-anchor-id="종속변수-salary_in_usd-국가별-비교-위해-usd달러로-환산">=&gt; 종속변수 : salary_in_usd (국가별 비교 위해 USD달러로 환산)</h4>
+</section>
+<section id="독립변수-company_size-remote_ratio" class="level4">
+<h4 class="anchored" data-anchor-id="독립변수-company_size-remote_ratio">=&gt; 독립변수 : company_size, remote_ratio</h4>
+</section>
+<section id="section-7" class="level3">
+<h3 class="anchored" data-anchor-id="section-7">———————————————————————————–</h3>
+</section>
+</section>
+<section id="정규성과-등분산성-검정" class="level2">
+<h2 class="anchored" data-anchor-id="정규성과-등분산성-검정"><span style="color: #0000FF">3. 정규성과 등분산성 검정</span></h2>
+</section>
+<section id="정규성-검정" class="level2">
+<h2 class="anchored" data-anchor-id="정규성-검정"><span style="color: #0000FF">1) 정규성 검정</span></h2>
+<section id="히스토그램-그래프의-형태로-판단" class="level3">
+<h3 class="anchored" data-anchor-id="히스토그램-그래프의-형태로-판단">(1) <span style="background-color: #fff5b1">히스토그램</span> : 그래프의 형태로 판단</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(sal<span class="sc">$</span>salary_in_usd, <span class="at">main=</span><span class="st">'&lt; 처리x &gt;'</span>, <span class="at">col=</span><span class="dv">3</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(<span class="fu">log</span>(sal<span class="sc">$</span>salary_in_usd), <span class="at">main=</span><span class="st">'&lt; log 처리 &gt;'</span>, <span class="at">col=</span><span class="dv">4</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(<span class="fu">sqrt</span>(sal<span class="sc">$</span>salary_in_usd), <span class="at">main=</span><span class="st">'&lt; sqrt 처리 &gt;'</span>, <span class="at">col=</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="정규분포를-따른다고-확실히-판단-불가-정규성x" class="level3">
+<h3 class="anchored" data-anchor-id="정규분포를-따른다고-확실히-판단-불가-정규성x">- 정규분포를 따른다고 확실히 판단 불가 (<span style="color: red"><strong>정규성x</strong></span>)</h3>
+</section>
+<section id="제곱근-처리를-한-것이-그나마-가장-정규분포정규성" class="level3">
+<h3 class="anchored" data-anchor-id="제곱근-처리를-한-것이-그나마-가장-정규분포정규성">- 제곱근 처리를 한 것이 그나마 가장 정규분포(<span style="color: red"><strong>정규성△</strong></span>)</h3>
+</section>
+<section id="section-8" class="level3">
+<h3 class="anchored" data-anchor-id="section-8">———————————————————————————–</h3>
+</section>
+<section id="q-q-플롯-가능한-직선으로-일치해야-적합한-모델" class="level3">
+<h3 class="anchored" data-anchor-id="q-q-플롯-가능한-직선으로-일치해야-적합한-모델">(2) <span style="background-color: #fff5b1">Q-Q 플롯</span> : 가능한 직선으로 일치해야 적합한 모델</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(sal<span class="sc">$</span>salary_in_usd[<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">607</span>, <span class="at">size=</span><span class="dv">500</span>)], <span class="at">col=</span><span class="dv">3</span>, <span class="at">main=</span><span class="st">'&lt; 처리x &gt;'</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">qqline</span>(sal<span class="sc">$</span>salary_in_usd[<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">607</span>, <span class="at">size=</span><span class="dv">500</span>)], <span class="at">col=</span><span class="st">'red'</span>, <span class="at">lwd=</span><span class="dv">3</span>)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(<span class="fu">sqrt</span>(sal<span class="sc">$</span>salary_in_usd), <span class="at">col=</span><span class="dv">5</span>, <span class="at">main=</span><span class="st">'&lt; sqrt 처리 &gt;'</span>)</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="fu">qqline</span>(<span class="fu">sqrt</span>(sal<span class="sc">$</span>salary_in_usd), <span class="at">col=</span><span class="st">'red'</span>, <span class="at">lwd=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="어느정도-정규성을-따른다고-볼-수-있음" class="level3">
+<h3 class="anchored" data-anchor-id="어느정도-정규성을-따른다고-볼-수-있음">- 어느정도 정규성을 따른다고 볼 수 있음</h3>
+</section>
+<section id="section-9" class="level3">
+<h3 class="anchored" data-anchor-id="section-9">———————————————————————————–</h3>
+</section>
+<section id="q-q-플롯-범위-포함" class="level3">
+<h3 class="anchored" data-anchor-id="q-q-플롯-범위-포함">(2-1) <span style="background-color: #fff5b1">Q-Q 플롯 (범위 포함)</span></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'car'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: carData</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqPlot</span>(sal<span class="sc">$</span>salary_in_usd, <span class="at">pch=</span><span class="dv">19</span>, <span class="at">col=</span><span class="st">'tan1'</span>, <span class="at">main=</span><span class="st">' &lt; 처리x &gt;'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 253  34</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqPlot</span>(<span class="fu">sqrt</span>(sal<span class="sc">$</span>salary_in_usd), <span class="at">pch=</span><span class="dv">19</span>, <span class="at">col=</span><span class="st">'lightgreen'</span>, <span class="at">main=</span><span class="st">'&lt; sqrt 처리 &gt;'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-12-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 253  34</code></pre>
+</div>
+</div>
+</section>
+<section id="정규성" class="level3">
+<h3 class="anchored" data-anchor-id="정규성"><span style="color: red">- <strong>정규성△</strong></span></h3>
+</section>
+<section id="sqrt처리의-경우-범위구간-내외에-위치-직선에-따라-분포" class="level3">
+<h3 class="anchored" data-anchor-id="sqrt처리의-경우-범위구간-내외에-위치-직선에-따라-분포">- sqrt처리의 경우, 범위구간 내/외에 위치, 직선에 따라 분포</h3>
+<section id="다음-검정부터는-곧바로-sqrt처리한-값을-쓰겠음" class="level4">
+<h4 class="anchored" data-anchor-id="다음-검정부터는-곧바로-sqrt처리한-값을-쓰겠음">(* 다음 검정부터는 곧바로 sqrt처리한 값을 쓰겠음)</h4>
+</section>
+</section>
+<section id="section-10" class="level3">
+<h3 class="anchored" data-anchor-id="section-10">———————————————————————————–</h3>
+</section>
+<section id="샤피로-윌크-검정" class="level3">
+<h3 class="anchored" data-anchor-id="샤피로-윌크-검정">(3) <span style="background-color: #fff5b1">샤피로-윌크 검정</span></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(<span class="fu">sqrt</span>(sal<span class="sc">$</span>salary_in_usd))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  sqrt(sal$salary_in_usd)
+W = 0.98793, p-value = 6.63e-05</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">shapiro.test</span>(sal<span class="sc">$</span>salary_in_usd[<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">607</span>, <span class="at">size=</span><span class="dv">500</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  sal$salary_in_usd[sample(1:607, size = 500)]
+W = 0.89371, p-value &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</section>
+<section id="정규성x" class="level3">
+<h3 class="anchored" data-anchor-id="정규성x"><span style="color: red">- <strong>정규성x</strong></span></h3>
+</section>
+<section id="p값이-낮음---귀무가설을-기각---정규성을-충족-못함" class="level3">
+<h3 class="anchored" data-anchor-id="p값이-낮음---귀무가설을-기각---정규성을-충족-못함">- p값이 낮음 -&gt; 귀무가설을 기각 -&gt; 정규성을 충족 못함</h3>
+</section>
+<section id="section-11" class="level3">
+<h3 class="anchored" data-anchor-id="section-11">———————————————————————————–</h3>
+</section>
+<section id="anderson-darling-검정" class="level3">
+<h3 class="anchored" data-anchor-id="anderson-darling-검정">(4) <span style="background-color: #fff5b1">Anderson-Darling 검정</span></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nortest)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ad.test</span>(sal<span class="sc">$</span>salary_in_usd)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Anderson-Darling normality test
+
+data:  sal$salary_in_usd
+A = 7.1677, p-value &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</section>
+<section id="정규성x-1" class="level3">
+<h3 class="anchored" data-anchor-id="정규성x-1"><span style="color: red">- <strong>정규성x</strong></span></h3>
+</section>
+<section id="p값이-낮음---귀무가설을-기각---정규분포와-큰-차이가-있음" class="level3">
+<h3 class="anchored" data-anchor-id="p값이-낮음---귀무가설을-기각---정규분포와-큰-차이가-있음">- p값이 낮음 -&gt; 귀무가설을 기각 -&gt; 정규분포와 큰 차이가 있음</h3>
+</section>
+<section id="하지만" class="level3">
+<h3 class="anchored" data-anchor-id="하지만">하지만,</h3>
+</section>
+<section id="분산분석의-경우-극단적-비정규성이-아닌-이상-크게-제한받지-않는다고-함" class="level3">
+<h3 class="anchored" data-anchor-id="분산분석의-경우-극단적-비정규성이-아닌-이상-크게-제한받지-않는다고-함"><span style="background-color: #fff5b1"><span style="color: red">분산분석의 경우, 극단적 비정규성이 아닌 이상 크게 제한받지 않는다고 함</span></span></h3>
+</section>
+<section id="section-12" class="level3">
+<h3 class="anchored" data-anchor-id="section-12">———————————————————————————–</h3>
+</section>
+</section>
+<section id="등분산성-검정" class="level2">
+<h2 class="anchored" data-anchor-id="등분산성-검정"><span style="color: #0000FF">2) 등분산성 검정</span></h2>
+<section id="등분산성의-검정시-귀무가설은-집단간-분산이-동일하다-기각되지-않아야-함." class="level3">
+<h3 class="anchored" data-anchor-id="등분산성의-검정시-귀무가설은-집단간-분산이-동일하다-기각되지-않아야-함.">※ 등분산성의 검정시, 귀무가설은 집단간 분산이 동일하다 =&gt; 기각되지 않아야 함.</h3>
+</section>
+<section id="즉-검정통계량의-p값이-유의수준보다-커야-한다는-것" class="level3">
+<h3 class="anchored" data-anchor-id="즉-검정통계량의-p값이-유의수준보다-커야-한다는-것">즉, 검정통계량의 p값이 유의수준보다 커야 한다는 것</h3>
+</section>
+<section id="section-13" class="level3">
+<h3 class="anchored" data-anchor-id="section-13">———————————————————————————–</h3>
+</section>
+<section id="levene-검정" class="level3">
+<h3 class="anchored" data-anchor-id="levene-검정">(1) <span style="background-color: #fff5b1">levene 검정</span></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leveneTest</span>(<span class="fu">sqrt</span>(salary_in_usd) <span class="sc">~</span> company_size, <span class="at">data=</span>sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Levene's Test for Homogeneity of Variance (center = median)
+       Df F value   Pr(&gt;F)   
+group   2  4.7956 0.008583 **
+      604                    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leveneTest</span>(<span class="fu">sqrt</span>(salary_in_usd) <span class="sc">~</span> remote_ratio, <span class="at">data=</span>sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Levene's Test for Homogeneity of Variance (center = median)
+       Df F value Pr(&gt;F)
+group   2   1.938 0.1449
+      604               </code></pre>
+</div>
+</div>
+</section>
+<section id="section-14" class="level3">
+<h3 class="anchored" data-anchor-id="section-14">———————————————————————————–</h3>
+</section>
+<section id="bartlett-검정" class="level3">
+<h3 class="anchored" data-anchor-id="bartlett-검정">(2) <span style="background-color: #fff5b1">bartlett 검정</span></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bartlett.test</span>(<span class="fu">sqrt</span>(salary_in_usd) <span class="sc">~</span> company_size, <span class="at">data=</span>sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Bartlett test of homogeneity of variances
+
+data:  sqrt(salary_in_usd) by company_size
+Bartlett's K-squared = 12.887, df = 2, p-value = 0.001591</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bartlett.test</span>(<span class="fu">sqrt</span>(salary_in_usd) <span class="sc">~</span> remote_ratio, <span class="at">data=</span>sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Bartlett test of homogeneity of variances
+
+data:  sqrt(salary_in_usd) by remote_ratio
+Bartlett's K-squared = 3.01, df = 2, p-value = 0.222</code></pre>
+</div>
+</div>
+</section>
+<section id="section-15" class="level3">
+<h3 class="anchored" data-anchor-id="section-15">———————————————————————————–</h3>
+</section>
+<section id="두-독립변수-중-회사규모는-애매-원격-근무-비중은-충족" class="level3">
+<h3 class="anchored" data-anchor-id="두-독립변수-중-회사규모는-애매-원격-근무-비중은-충족">두 독립변수 중 <span style="background-color: #fff5b1">회사규모는 애매</span>, <span style="background-color: #fff5b1">원격 근무 비중은 충족</span></h3>
+<section id="if-두-검정으로-등분산성을-확보할-수-없었다면" class="level5">
+<h5 class="anchored" data-anchor-id="if-두-검정으로-등분산성을-확보할-수-없었다면"><span style="color: #008000">if) 두 검정으로 등분산성을 확보할 수 없었다면,</span></h5>
+</section>
+<section id="aov는-하기-힘들었을-것이고-oneway-검정을-했을-것이다." class="level5">
+<h5 class="anchored" data-anchor-id="aov는-하기-힘들었을-것이고-oneway-검정을-했을-것이다."><span style="color: #008000">aov는 하기 힘들었을 것이고, oneway 검정을 했을 것이다.</span></h5>
+</section>
+<section id="단-tukeyhsd-함수를-이용한-다중비교는-불가" class="level5">
+<h5 class="anchored" data-anchor-id="단-tukeyhsd-함수를-이용한-다중비교는-불가"><span style="color: #008000">(단, TukeyHSD() 함수를 이용한 다중비교는 불가)</span></h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">oneway.test</span>(<span class="fu">sqrt</span>(salary_in_usd) <span class="sc">~</span> company_size, <span class="at">data=</span>sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One-way analysis of means (not assuming equal variances)
+
+data:  sqrt(salary_in_usd) and company_size
+F = 16.215, num df = 2.00, denom df = 210.71, p-value = 2.819e-07</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">oneway.test</span>(<span class="fu">sqrt</span>(salary_in_usd) <span class="sc">~</span> remote_ratio, <span class="at">data=</span>sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One-way analysis of means (not assuming equal variances)
+
+data:  sqrt(salary_in_usd) and remote_ratio
+F = 19.329, num df = 2.00, denom df = 220.56, p-value = 1.842e-08</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="section-16" class="level3">
+<h3 class="anchored" data-anchor-id="section-16">———————————————————————————–</h3>
+</section>
+</section>
+<section id="이원-분산분석" class="level2">
+<h2 class="anchored" data-anchor-id="이원-분산분석"><span style="color: #0000FF">4. 이원 분산분석</span></h2>
+<section id="집단의-요약통계량" class="level3">
+<h3 class="anchored" data-anchor-id="집단의-요약통계량">1) 집단의 요약통계량</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">with</span>(sal, <span class="fu">tapply</span>(salary_in_usd, <span class="fu">list</span>(company_size, remote_ratio), length))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       20%미만 20-80% 80%이상
+Large       32     60     106
+Medium      79     21     226
+Small       16     18      49</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">with</span>(sal, <span class="fu">tapply</span>(salary_in_usd, <span class="fu">list</span>(company_size, remote_ratio), mean))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         20%미만   20-80%   80%이상
+Large  120855.88 89724.23 135464.82
+Medium 108747.01 61835.00 124874.48
+Small   65539.69 73305.06  83171.14</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">with</span>(sal, <span class="fu">tapply</span>(salary_in_usd, <span class="fu">list</span>(company_size, remote_ratio), sd))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        20%미만   20-80%  80%이상
+Large  70677.32 65467.83 96329.77
+Medium 63827.31 42195.16 56004.44
+Small  69020.88 34752.47 69832.55</code></pre>
+</div>
+</div>
+</section>
+<section id="section-17" class="level3">
+<h3 class="anchored" data-anchor-id="section-17">———————————————————————————–</h3>
+</section>
+<section id="등분산성을-충족했으니-aov함수로-이원분산분석-수행" class="level3">
+<h3 class="anchored" data-anchor-id="등분산성을-충족했으니-aov함수로-이원분산분석-수행">2) (등분산성을 충족했으니) aov함수로 이원분산분석 수행</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>sal.aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(salary_in_usd <span class="sc">~</span> company_size <span class="sc">*</span> remote_ratio, <span class="at">data=</span>sal)</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>sal.aov</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Call:
+   aov(formula = salary_in_usd ~ company_size * remote_ratio, data = sal)
+
+Terms:
+                company_size remote_ratio company_size:remote_ratio
+Sum of Squares  1.162105e+11 1.435787e+11              2.415798e+10
+Deg. of Freedom            2            2                         4
+                   Residuals
+Sum of Squares  2.767222e+12
+Deg. of Freedom          598
+
+Residual standard error: 68025.45
+Estimated effects may be unbalanced</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sal.aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                           Df    Sum Sq   Mean Sq F value   Pr(&gt;F)    
+company_size                2 1.162e+11 5.811e+10  12.557 4.55e-06 ***
+remote_ratio                2 1.436e+11 7.179e+10  15.514 2.70e-07 ***
+company_size:remote_ratio   4 2.416e+10 6.039e+09   1.305    0.267    
+Residuals                 598 2.767e+12 4.627e+09                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+<section id="주효과1-회사규모-급여-0.05보다-작음---귀무가설-기각---영향이-있음" class="level4">
+<h4 class="anchored" data-anchor-id="주효과1-회사규모-급여-0.05보다-작음---귀무가설-기각---영향이-있음"><span style="color: #008000">* 주효과1 (회사규모-급여) : 0.05보다 작음 -&gt; 귀무가설 기각 -&gt; 영향이 있음</span></h4>
+</section>
+<section id="주효과2-원격업무-급여-0.05보다-작음---귀무가설-기각---영향이-있음" class="level4">
+<h4 class="anchored" data-anchor-id="주효과2-원격업무-급여-0.05보다-작음---귀무가설-기각---영향이-있음"><span style="color: #008000"> 주효과2 (원격업무-급여) : 0.05보다 작음 -&gt; 귀무가설 기각 -&gt; 영향이 있음<span></span></span></h4>
+</section>
+<section id="상호작용효과-회사규모원격업무-급여-0.05보다-큼---귀무가설-기각---영향이-없음" class="level4">
+<h4 class="anchored" data-anchor-id="상호작용효과-회사규모원격업무-급여-0.05보다-큼---귀무가설-기각---영향이-없음"><span style="color: #008000">상호작용효과 (회사규모&amp;원격업무-급여) : 0.05보다 큼 -&gt; 귀무가설 기각 -&gt; 영향이 없음</span></h4>
+</section>
+</section>
+<section id="section-18" class="level3">
+<h3 class="anchored" data-anchor-id="section-18">———————————————————————————–</h3>
+</section>
+<section id="model.tables" class="level3">
+<h3 class="anchored" data-anchor-id="model.tables">3) model.tables</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">model.tables</span>(sal.aov, <span class="at">type=</span><span class="st">'means'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tables of means
+Grand mean
+         
+112297.9 
+
+ company_size 
+     Large Medium Small
+    119243 116905 77633
+rep    198    326    83
+
+ remote_ratio 
+    20%미만 20-80% 80%이상
+     106106  81939  122250
+rep     127     99     381
+
+ company_size:remote_ratio 
+            remote_ratio
+company_size 20%미만 20-80% 80%이상
+      Large  120856   89724 135465 
+      rep        32      60    106 
+      Medium 108747   61835 124874 
+      rep        79      21    226 
+      Small   65540   73305  83171 
+      rep        16      18     49 </code></pre>
+</div>
+</div>
+<section id="수치-분석" class="level5">
+<h5 class="anchored" data-anchor-id="수치-분석"><span style="color: #008000">* 수치 분석</span></h5>
+</section>
+<section id="회사-규모가-l과-m의-지출-급여가-비슷했지만-회사갯수에서는-60이상-차이가-났음" class="level5">
+<h5 class="anchored" data-anchor-id="회사-규모가-l과-m의-지출-급여가-비슷했지만-회사갯수에서는-60이상-차이가-났음"><span style="color: #008000">- 회사 규모가 L과 M의 지출 급여가 비슷했지만, 회사갯수에서는 60%이상 차이가 났음</span></h5>
+</section>
+<section id="생각보다-원격-업무의-비중이-큰-회사들이-많았음" class="level5">
+<h5 class="anchored" data-anchor-id="생각보다-원격-업무의-비중이-큰-회사들이-많았음"><span style="color: #008000"> (생각보다 원격 업무의 비중이 큰 회사들이 많았음)</span></h5>
+</section>
+</section>
+<section id="section-19" class="level3">
+<h3 class="anchored" data-anchor-id="section-19">———————————————————————————–</h3>
+</section>
+<section id="상자도표boxplot" class="level3">
+<h3 class="anchored" data-anchor-id="상자도표boxplot">4) 상자도표(boxplot)</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(salary_in_usd <span class="sc">~</span> company_size <span class="sc">*</span> remote_ratio, <span class="at">data=</span>sal, </span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">col=</span><span class="fu">c</span>(<span class="st">'deeppink'</span>,<span class="st">'yellowgreen'</span>,<span class="st">'skyblue'</span>), <span class="at">las=</span><span class="dv">1</span>,</span>
+<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab=</span><span class="st">'회사규모.원격근무비중'</span>, <span class="at">ylab=</span><span class="st">'지출되는 급여(USD)'</span>,</span>
+<span id="cb75-4"><a href="#cb75-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">main=</span><span class="st">'회사규모와 원격근무비중에 따른 지출급여(USD)'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="회사-규모가-클수록-확실히-지출-급여가-컸음" class="level3">
+<h3 class="anchored" data-anchor-id="회사-규모가-클수록-확실히-지출-급여가-컸음"><span style="color: #008000">* 회사 규모가 클수록, 확실히 지출 급여가 컸음</span></h3>
+</section>
+<section id="회사-규모가-작을수록-원격-업무가-20미만-or-80이상으로-명확한-컨셉을-가졌음" class="level3">
+<h3 class="anchored" data-anchor-id="회사-규모가-작을수록-원격-업무가-20미만-or-80이상으로-명확한-컨셉을-가졌음"><span style="color: #008000">* 회사 규모가 작을수록, 원격 업무가 20%미만 or 80%이상으로 명확한 컨셉을 가졌음</span></h3>
+</section>
+<section id="section-20" class="level3">
+<h3 class="anchored" data-anchor-id="section-20">———————————————————————————–</h3>
+</section>
+<section id="조건부도표coplot" class="level3">
+<h3 class="anchored" data-anchor-id="조건부도표coplot">5) 조건부도표(coplot)</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gplots)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'gplots'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:stats':
+
+    lowess</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plotmeans</span>(salary_in_usd <span class="sc">~</span> <span class="fu">interaction</span>(company_size, remote_ratio, <span class="at">sep=</span><span class="st">''</span>), <span class="at">data=</span>sal,</span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">connect=</span><span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">4</span>,<span class="dv">7</span>), <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">8</span>), <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">9</span>)),</span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">col=</span><span class="fu">c</span>(<span class="st">'red'</span>, <span class="st">'green3'</span>,<span class="st">'tan1'</span>), <span class="at">barwidt=</span><span class="dv">2</span>, </span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">xlab=</span><span class="st">'회사규모와 원격업무비중'</span>, <span class="at">ylab=</span><span class="st">'지출급여(USD)'</span>,<span class="at">main=</span><span class="st">'지출급여(USD) 평균도표'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="큰회사빨-중간회사연두-작은회사귤" class="level3">
+<h3 class="anchored" data-anchor-id="큰회사빨-중간회사연두-작은회사귤"><span style="color: #008000">* 큰회사(빨), 중간회사(연두), 작은회사(귤)</span></h3>
+</section>
+<section id="section-21" class="level3">
+<h3 class="anchored" data-anchor-id="section-21">———————————————————————————–</h3>
+</section>
+<section id="주효과와-상호작용효과-시각화화" class="level3">
+<h3 class="anchored" data-anchor-id="주효과와-상호작용효과-시각화화">6) 주효과와 상호작용효과 시각화화</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(HH)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: lattice</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: latticeExtra</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: multcomp</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: mvtnorm</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: survival</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: TH.data</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: MASS</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'TH.data'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:MASS':
+
+    geyser</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: gridExtra</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'HH'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:gplots':
+
+    residplot</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:car':
+
+    logit, vif</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">interaction2wt</span>(salary_in_usd <span class="sc">~</span> company_size <span class="sc">*</span> remote_ratio, <span class="at">data=</span>sal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="PT_week8_HCB_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="주효과1-3-사분면" class="level3">
+<h3 class="anchored" data-anchor-id="주효과1-3-사분면"><span style="color: #008000">* 주효과(1, 3 사분면)</span></h3>
+</section>
+<section id="상호작용효과24-사분면" class="level3">
+<h3 class="anchored" data-anchor-id="상호작용효과24-사분면"><span style="color: #008000">* 상호작용효과(2,4 사분면)</span></h3>
+</section>
+<section id="section-22" class="level3">
+<h3 class="anchored" data-anchor-id="section-22">———————————————————————————–</h3>
+</section>
+</section>
+<section id="사후검정" class="level2">
+<h2 class="anchored" data-anchor-id="사후검정"><span style="color: #0000FF">5. 사후검정</span></h2>
+<section id="집단-간-차이에-대한-추가-검정-수행" class="level3">
+<h3 class="anchored" data-anchor-id="집단-간-차이에-대한-추가-검정-수행">: 집단 간 차이에 대한 추가 검정 수행</h3>
+</section>
+<section id="이원-분산분석을-통해-차이의-유무-정도만-파악된-상태" class="level3">
+<h3 class="anchored" data-anchor-id="이원-분산분석을-통해-차이의-유무-정도만-파악된-상태">(이원 분산분석을 통해 차이의 유무 정도만 파악된 상태)</h3>
+</section>
+<section id="tukeyhsd" class="level3">
+<h3 class="anchored" data-anchor-id="tukeyhsd">1) TukeyHSD</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(sal.aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = salary_in_usd ~ company_size * remote_ratio, data = sal)
+
+$company_size
+                   diff       lwr       upr     p adj
+Medium-Large  -2337.529 -16738.19  12063.13 0.9229714
+Small-Large  -41610.320 -62510.00 -20710.64 0.0000107
+Small-Medium -39272.792 -58923.21 -19622.37 0.0000098
+
+$remote_ratio
+                     diff         lwr       upr     p adj
+20-80%-20%미만  -24166.54 -45595.0907 -2737.985 0.0224817
+80%이상-20%미만  16144.56   -232.1119 32521.227 0.0543322
+80%이상-20-80%   40311.10  22280.9758 58341.216 0.0000006
+
+$`company_size:remote_ratio`
+                                    diff          lwr         upr     p adj
+Medium:20%미만-Large:20%미만  -12108.862  -56484.9726  32267.2479 0.9952350
+Small:20%미만-Large:20%미만   -55316.188 -120159.0107   9526.6357 0.1662745
+Large:20-80%-Large:20%미만    -31131.642  -77489.0957  15225.8124 0.4806813
+Medium:20-80%-Large:20%미만   -59020.875 -118495.2074    453.4574 0.0535879
+Small:20-80%-Large:20%미만    -47550.819 -109945.8552  14844.2163 0.3010844
+Large:80%이상-Large:20%미만    14608.946  -28106.7907  57324.6822 0.9789036
+Medium:80%이상-Large:20%미만    4018.607  -35981.1100  44018.3246 0.9999973
+Small:80%이상-Large:20%미만   -37684.732  -85818.0454  10448.5811 0.2656461
+Small:20%미만-Medium:20%미만  -43207.325 -101265.6556  14851.0053 0.3335288
+Large:20-80%-Medium:20%미만   -19022.779  -55288.3492  17242.7906 0.7863162
+Medium:20-80%-Medium:20%미만  -46912.013  -98905.9952   5081.9699 0.1148495
+Small:20-80%-Medium:20%미만   -35441.957  -90753.0635  19869.1493 0.5475721
+Large:80%이상-Medium:20%미만   26717.808   -4759.3607  58194.9769 0.1714444
+Medium:80%이상-Medium:20%미만  16127.470  -11552.0425  43806.9818 0.6729836
+Small:80%이상-Medium:20%미만  -25575.870  -64085.5291  12933.7895 0.4966721
+Large:20-80%-Small:20%미만     24184.546  -35401.8966  83770.9883 0.9413480
+Medium:20-80%-Small:20%미만    -3704.687  -73980.7630  66571.3880 1.0000000
+Small:20-80%-Small:20%미만      7765.368  -64999.1223  80529.8584 0.9999957
+Large:80%이상-Small:20%미만    69925.133   13125.7960 126724.4706 0.0044152
+Medium:80%이상-Small:20%미만   59334.795    4548.7751 114120.8145 0.0224463
+Small:80%이상-Small:20%미만    17631.455  -43346.7901  78609.7008 0.9929336
+Medium:20-80%-Large:20-80%    -27889.233  -81584.1922  25805.7255 0.7953653
+Small:20-80%-Large:20-80%     -16419.178  -73332.2069  40493.8513 0.9930395
+Large:80%이상-Large:20-80%     45740.587   11526.7519  79954.4230 0.0011965
+Medium:80%이상-Large:20-80%    35150.249    4394.2775  65906.2204 0.0119810
+Small:80%이상-Large:20-80%     -6553.090  -47330.1459  34223.9649 0.9998995
+Small:20-80%-Medium:20-80%     11470.056  -56554.0251  79494.1362 0.9998554
+Large:80%이상-Medium:20-80%    73629.821   23045.5425 124214.0990 0.0002424
+Medium:80%이상-Medium:20-80%   63039.482   14726.8293 111352.1353 0.0017991
+Small:80%이상-Medium:20-80%    21336.143  -33899.2707  76571.5564 0.9558630
+Large:80%이상-Small:20-80%     62159.765    8171.6787 116147.8516 0.0109246
+Medium:80%이상-Small:20-80%    51569.427    -296.3299 103435.1834 0.0526687
+Small:80%이상-Small:20-80%      9866.087  -48502.5274  68234.7020 0.9998527
+Medium:80%이상-Large:80%이상  -10590.338  -35521.2505  14340.5736 0.9244862
+Small:80%이상-Large:80%이상   -52293.678  -88877.6750 -15709.6808 0.0003487
+Small:80%이상-Medium:80%이상  -41703.339  -75075.9641  -8330.7147 0.0035419</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(sal.aov, <span class="at">which=</span><span class="fu">c</span>(<span class="st">'company_size'</span>,<span class="st">'remote_ratio'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = salary_in_usd ~ company_size * remote_ratio, data = sal)
+
+$company_size
+                   diff       lwr       upr     p adj
+Medium-Large  -2337.529 -16738.19  12063.13 0.9229714
+Small-Large  -41610.320 -62510.00 -20710.64 0.0000107
+Small-Medium -39272.792 -58923.21 -19622.37 0.0000098
+
+$remote_ratio
+                     diff         lwr       upr     p adj
+20-80%-20%미만  -24166.54 -45595.0907 -2737.985 0.0224817
+80%이상-20%미만  16144.56   -232.1119 32521.227 0.0543322
+80%이상-20-80%   40311.10  22280.9758 58341.216 0.0000006</code></pre>
+</div>
+</div>
+</section>
+<section id="등분산성-검사-한가지만-충족된-상황-최종-언급" class="level3">
+<h3 class="anchored" data-anchor-id="등분산성-검사-한가지만-충족된-상황-최종-언급">* 등분산성 검사, 한가지만 충족된 상황 최종 언급!!</h3>
+</section>
+<section id="결과에-영향을-미쳤을-수도-있음.-그런-한계가-있음을-확실히-명시" class="level3">
+<h3 class="anchored" data-anchor-id="결과에-영향을-미쳤을-수도-있음.-그런-한계가-있음을-확실히-명시">결과에 영향을 미쳤을 수도 있음. 그런 한계가 있음을 확실히 명시</h3>
+<p>#——————————————————————————-</p>
+</section>
+</section>
+<section id="느낀점-1" class="level2">
+<h2 class="anchored" data-anchor-id="느낀점-1"><span style="color: #0000FF">6. 느낀점</span></h2>
+<section id="아쉬운점-이원-분산분석을-할-때-상호작용효과까지-발생하고-있는-상태였다면-좀더-풍부한-분석을-할-수-있었을-것인데-아쉬움" class="level5">
+<h5 class="anchored" data-anchor-id="아쉬운점-이원-분산분석을-할-때-상호작용효과까지-발생하고-있는-상태였다면-좀더-풍부한-분석을-할-수-있었을-것인데-아쉬움">1) 아쉬운점 : 이원 분산분석을 할 때, 상호작용효과까지 발생하고 있는 상태였다면 좀더 풍부한 분석을 할 수 있었을 것인데, 아쉬움</h5>
+</section>
+<section id="어려웠던-점-정규성과-등분산성을-충족시키기-위한-조절" class="level5">
+<h5 class="anchored" data-anchor-id="어려웠던-점-정규성과-등분산성을-충족시키기-위한-조절">2) 어려웠던 점 : 정규성과 등분산성을 충족시키기 위한 조절</h5>
+</section>
+<section id="좋았던-점-분산분석에-대한-전반적인-분석-흐름은-알게된-것-같아-좋았음.-다른-분들-분석을-참고하면서-직접-하나씩-하는-시간을-가져야-겠음" class="level5">
+<h5 class="anchored" data-anchor-id="좋았던-점-분산분석에-대한-전반적인-분석-흐름은-알게된-것-같아-좋았음.-다른-분들-분석을-참고하면서-직접-하나씩-하는-시간을-가져야-겠음">3) 좋았던 점 : 분산분석에 대한 전반적인 분석 흐름은 알게된 것 같아 좋았음. 다른 분들 분석을 참고하면서 직접 하나씩 하는 시간을 가져야 겠음</h5>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
