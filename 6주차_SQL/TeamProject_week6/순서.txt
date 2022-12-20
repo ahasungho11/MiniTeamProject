@@ -1,0 +1,20 @@
+* 입력순서=================
+-- from
+   -- join -on
+-- where 
+-- group by
+-- having
+-- order by
+
+* 연산순서=================
+-- from 
+-- on
+-- join 
+-- where
+-- group by
+-- cube | rollup
+-- having
+-- select
+-- distinct
+-- order by
+-- top
