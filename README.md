@@ -1,2 +1,2 @@
 # MiniTeamProject
-MiniTeamProject 모
+MiniTeamProject
